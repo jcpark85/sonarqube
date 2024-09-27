@@ -1,5 +1,6 @@
 const request = require('supertest');
 const { app, startServer, stopServer } = require('../app');
+const assert = require('assert');
 
 beforeAll((done) => {
   startServer();
