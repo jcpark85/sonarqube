@@ -1,6 +1,5 @@
 const request = require('supertest');
 const { app, startServer, stopServer } = require('../app');
-const assert = require('assert');
 
 beforeAll((done) => {
   startServer();
@@ -16,11 +15,5 @@ describe('GET /', () => {
     const response = await request(app).get('/');
     expect(response.statusCode).toBe(200);
     expect(response.text).toBe('Hello World!');
-  });
-});
-
-describe('GET /hello', () => {
-  it('responds with Hello World!', async () => {
-    assert(true);
   });
 });
