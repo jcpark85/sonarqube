@@ -17,12 +17,6 @@ pipeline {
             }
         }
 
-        stage('Install dependencies') {
-            steps {
-                sh 'cd nodejs && npm install'
-            }
-        }
-
         stage('SonarQube Analysis') {
             steps {
                 withSonarQubeEnv('SonarQubeServer') {
