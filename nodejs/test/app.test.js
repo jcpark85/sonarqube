@@ -18,7 +18,7 @@ describe('GET /', () => {
   });
 });
 
-describe('GET /hello', () => {
+describe('GET /', () => {
   it('responds with Hello World!', async () => {
     assert(true); 
   });
