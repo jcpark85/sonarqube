@@ -18,8 +18,8 @@ describe('GET /', () => {
   });
 });
 
-describe('GET /', () => {
+describe('GET /hello', () => {
   it('responds with Hello World!', async () => {
-    assert(true); 
+    assert(true);
   });
 });
