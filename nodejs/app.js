@@ -1,13 +1,13 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-app.disable("x-powered-by");
+app.disable('x-powered-by');
 const port = 3000;
 
 app.get('/', (_req, res) => {
   const a = 1;
   const b = 2;
   const c = 1 + 2;
-  if ( a == b ) {
+  if ( a === b ) {
     console.log('a equals b')
   }
   console.log('1+2='+c);
